@@ -12,7 +12,7 @@ public class UserRepository {
     List<User> albumList=new ArrayList();
     public User getUser() {
 
-        User user = new User(1 , "WeddingPics", "About best moments", "C:\\Users\\syeda hafsa fatima\\Desktop\\MY phone backuup\\DCIM\\AR Emoji camera\\A1.jpg");
+        User user = new User(1 , "My Picture", "Own photo", "C:\\\\Users\\\\MANNAN\\\\Desktop\\\\mannan.jpg");
         return user;
     }
 
