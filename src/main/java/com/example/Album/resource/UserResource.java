@@ -25,15 +25,15 @@ public class UserResource {
     public User saveUser(@RequestBody User user) {
         return userService.saveUser(user);
     }
-    @GetMapping("/allAlbums")
-    public List<User> getAllAlbums()
+    @GetMapping("/allalbum")
+    public List<User> getAllAlbum()
     {
-        return userService.getAllAlbums();
+        return userService.getAllAlbum();
     }
     @GetMapping("/album/{albumId}")
-    public User getAlbumbyId(@PathVariable("albumId") int albumId)
+    public User getAlbumId(@PathVariable("albumId") int albumId)
     {
-        return userService.getAlbumbyId(albumId);
+        return userService.getAlbumId(albumId);
     }
 
     @PutMapping("/album/{albumId}")

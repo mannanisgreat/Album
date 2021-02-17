@@ -22,11 +22,11 @@ public class UserRepository {
         return user;
     }
 
-    public List<User> getAllAlbums() {
+    public List<User> getAllAlbum() {
         return albumList;
     }
 
-    public User getAlbumbyId(int albumId) {
+    public User getAlbumId(int albumId) {
         for(User user:albumList)
         {
             if(user.getAlbumId() == albumId){
@@ -44,8 +44,6 @@ public class UserRepository {
             if(u.getAlbumId() == albumId)
             {
                 u.setName(user.getName());
-                //u.setAddress(user.getAddress());
-                //u.setAge(user.getAge());
                 u.setAlbumId(user.getAlbumId());
                 u.setDescription(user.getDescription());
 

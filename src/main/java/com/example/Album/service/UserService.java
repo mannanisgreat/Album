@@ -21,13 +21,13 @@ public class UserService {
         return userRepository.saveUser(user);
     }
 
-    public List<User> getAllAlbums() {
+    public List<User> getAllAlbum() {
 
-        return userRepository.getAllAlbums();
+        return userRepository.getAllAlbum();
     }
 
-    public User getAlbumbyId(int albumId) {
-        return userRepository.getAlbumbyId(albumId);
+    public User getAlbumId(int albumId) {
+        return userRepository.getAlbumId(albumId);
     }
 
     public User updateAlbum(int albumId, User user) {
